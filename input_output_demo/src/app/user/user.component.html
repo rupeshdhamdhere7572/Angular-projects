@@ -1,0 +1,21 @@
+<!-- <h1>{{ val }}</h1> -->
+<h1>User data calling from parent to child</h1>
+<!-- <table cellPadding="6" border="3" width="400px">
+  <tr>
+    <td>{{ val.name }}</td>
+    <td>{{ val.sal }}</td>
+    <td>{{ val.deptno }}</td>
+    <td>{{ val.designation }}</td>
+  </tr>
+</table> -->
+<br />
+<br />
+<div class="c1">
+  <p>{{val.name}}</p>
+  <p>{{val.age}}</p>
+  <p>{{val.country}}</p>
+</div>
+
+<label for="item-input"> Add an item</label>
+<input type="text" id="item-input" #newItem>
+<button type="button"(click)="addNewItem(newItem.value)">Add to parent's</button>

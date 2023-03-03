@@ -1,0 +1,12 @@
+.c1{
+     background-color: blue;
+     padding: 10px;
+     color: red;
+     margin-bottom:20px;
+     width: 300px;
+     margin: auto;
+}
+p{
+     display: inline-block;
+     padding: 20px;
+}

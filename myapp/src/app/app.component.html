@@ -1,0 +1,81 @@
+<!-- <h1 [ngStyle]="currentStyle"> huhuh</h1> -->
+<!-- <table>
+  <tr>
+    <th>name</th>
+    <th>salary</th>
+    <th>city</th>
+  </tr>
+  <tr *ngFor="let i of employee" class="text-primary">
+    <td>{{ i.name }}</td>
+    <td>{{ i.salary }}</td>
+    <td>{{ i.city }}</td>
+  </tr>
+</table>
+<ul *ngFor="let i of employee">
+  <li class="fw-bold text-warning" [ngStyle]="{ 'background-color': i.city == 'pune' ? 'green' : 'red' }">
+    {{ i.name }} {{ i.salary }} {{ i.city }}
+  </li>
+</ul>
+
+<hr />
+<h2>variable based styling using ngStyle</h2>
+<ul *ngFor="let i of employee">
+  <li [ngStyle]="isTrue?{'color':'pink', 'font-size':'20px','font-weight':'bold'}:
+{'color':'blue', 'font-size':'20px', 'font-weight':'bold'}">
+    <pre>{{ i.name }} {{ i.city }} {{ i.salary }}</pre>
+  </li>
+</ul> -->
+<!-- <hr>
+<h1 class="text-center">Ng class Examples</h1>
+<ul *ngFor="let i of employee">
+  <li [ngClass]="{'text-success':i.name=='john',
+'text-primary':i.name=='blake',
+'text-warning':i.name=='scott',
+<!-- 'text-info':i.name=='martin'}">{{i.name}} {{i.salary}</li> -->
+
+
+<h2>{{fun1()}}</h2>
+<p>show this all</p>
+<div *ngIf="show">
+  <p>Show this only if"show" is true/p>
+</div>
+<ng-template #notshow>
+  <p>show this only if "show" is false</p>
+</ng-template>
+<hr>
+<h2>Second Option</h2>
+
+
+<ng-template *ngIf="show; then showblock else notshowblock">
+
+</ng-template>
+<ng-template #showblock>
+  <p>if condition is true </p>
+</ng-template>
+<ng-template #notshowblock>
+  <p>if condition is false </p>
+</ng-template>
+
+<table>
+  <ng-container *ngFor="let i of employee">
+    <!-- <ng-template *ngIf="i.age>=40; then tem else tem1"></ng-template> -->
+    <ng-template #tem>
+      <td>{{i.name}} </td>
+      <td>{{i.age}}</td>
+
+    </ng-template>
+    <ng-template #tem1>
+      <td class="text-primary">{{i.name}} </td>
+      <td class="text-info">{{i.age}}</td>
+
+    </ng-template>
+
+
+  </ng-container>
+
+</table>
+<ul *ngFor="let i of employee">
+  <li *ngIf="i.city=='pune'" class="text-info">{{i.name}} {{i.age}} {{i.city} </li>
+  <li *ngIf="i.city=='nashik'" class="text-warning">{{i.name}} {{i.age}} {{i.city} </li>
+  <li *ngIf="i.city=='new york'" class="text-danger">{{i.name}} {{i.age}} {{i.city} </li>
+</ul>

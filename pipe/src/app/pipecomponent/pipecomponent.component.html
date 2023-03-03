@@ -1,0 +1,41 @@
+<!-- <div style="width:100%">
+     <div style="width:40%; float:left; border:solid 2px black;">
+          <h1>upper pipe</h1>
+          <b>{{title | uppercase}}</b><br>
+          <h1>Lowercase Pipe</h1>
+          <b>{{title | lowercase}}</b>
+          <h1>Currency  Pipe</h1>
+          <b>{{6578.23 |  currency:"USD"}}</b><br>
+          <b>{{6578.23 | currency:"USD": true}}</b><br>
+          <h1>data pipe</h1>
+          <b>{{todaydate | date: 'd/m/y'}}</b>
+          <b>{{todaydate | date: 'shortTime'}}</b>
+          <h1>decimal pipe</h1>
+          <b>{{456.7667655 | number: '3.4-4'</b>
+
+     </div>
+     <div style = "width:40%; float:left">
+<h1>json pipe</h1>
+<b>{{jsonval|json}}</b>
+<h1>percent pipe</h1>
+<b>{{00.54455| percent}}</b>
+<h1>slice pipe</h1>
+
+     </div> 
+
+</div> -->
+<div style="float: none;">
+     <h3>usedefined pipe example</h3>
+     <h3>{{2|power:5}}</h3>
+</div>
+<table class="table table-bordered w-25 p-3" align="center">
+     <tr *ngFor="let i of people">
+          <td>{{i.name | gender:i.gender}}</td>
+          <td>{{i.age}}</td>
+          <td>{{i.country}}</td>
+          <td>{{i.gender}}</td>
+
+
+     </tr>
+
+</table>

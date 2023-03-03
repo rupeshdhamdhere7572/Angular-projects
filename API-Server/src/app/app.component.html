@@ -1,0 +1,9 @@
+<h1>news api data</h1>
+<div class="container" *ngFor="let i of newsdata">
+  <h4 class="text-center">{{i.title}}</h4>
+    <p class="text-center">{{i.publisheAt}}</p>
+    <img [src]="i.urlToImage" width="100%">
+    <p>{{i.description}}</p>
+
+</div>
+<router-outlet></router-outlet>

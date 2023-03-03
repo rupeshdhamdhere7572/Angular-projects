@@ -1,0 +1,23 @@
+<h1>Product List</h1>
+<div class="table-responsive">
+     <table>
+          <thead>
+               <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+
+               </tr>
+          </thead>
+          <tbody>
+               <tr *ngFor="let product of pdata">
+                    <td>{{product.product1}}</td>
+                    <td><a [routerlink]="['/product',product.productID]">{{product.productName}}</a></td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.qty}}</td>
+               </tr>
+          </tbody>
+
+     </table>
+</div>

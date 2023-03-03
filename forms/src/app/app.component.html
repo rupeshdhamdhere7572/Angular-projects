@@ -1,0 +1,167 @@
+<!-- <div class="container mt-5" style="max-width: 550px">
+  <form #myForm="ngForm" (ngSubmit)="submit(myForm)" class="form-group">
+    <label>User Name</label>
+    <input
+      type="text"
+      class="form-control"
+      name="uname"
+      [(ngModel)]="form.uname"
+      uname
+      #uname="ngModel"
+    />
+
+    <div *ngIf="uname.invalid && (uname.dirty || uname.touched)">
+      <div *ngIf="uname.errors?.['required']">username is required</div>
+      <div *ngIf="uname.errors?.['minlength']">
+        username must be at least 4 characters
+      </div>
+      <div *ngIf="uname.errors?.['maxlength']">
+        username must not be exceed 10 characters
+      </div>
+    </div>
+
+    <div class="form-control">
+      <label>E-mail</label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        [(ngModel)]="form.email"
+        email
+        #email="ngModel"
+        required
+      />
+      <div *ngIf="(email.invalid && email.touched) || email.dirty">
+        <p *ngIf="email.errors?.['required']">Email is required</p>
+        <p *ngIf="uname.errors?.['email']">please enter valid E-mail</p>
+      </div>
+    </div>
+    <div class="form-control">
+      <label>mobile number</label>
+      <input
+        type="text"
+        class="form-control"
+        name="mobile"
+        [(ngModel)]="form.mobile"
+        mobile
+        #mobile="ngModel"
+       
+      />
+      <div *ngIf="(email.invalid && email.touched) || email.dirty">
+        <div *ngIf="mobile.errors?.['required']">mobile number is required</div>
+        <div *ngIf="mobile.errors?.['required']">
+          check the mobile number length
+        </div>
+        <div *ngIf="mobile.errors?.['required']">
+          mobile number must be exceed 10 digits
+        </div>
+      </div>
+    </div>
+
+    <div class="form-control">
+      <label>password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        [(ngModel)]="form.password"
+        password
+        #password="ngModel"
+    
+      />
+      <div *ngIf="password.invalid && (password.dirty || password.touched)">
+        <div *ngIf="password.errors?.['required']">password is required</div>
+        <div *ngIf="password.errors?.['minlength']">
+          password must be at least 4 characters
+        </div>
+        <div *ngIf="password.errors?.['maxlength']">
+          password must not be exceed 8 characters
+        </div>
+      </div>
+    </div>
+    <!-- <div class="form-group">
+      <label>confirm password</label>
+      <input
+        type="email"
+        class="form-control"
+        name="confirmpassword"
+        [(ngModel)]="form.confirmpassword"
+        password
+        #confirmpassword="ngModel"
+        
+      />
+      <div
+        *ngIf="
+          (confirmpassword.invalid && confirmpassword.touched) ||
+          confirmpassword.dirty
+        "
+      >
+        <div *ngIf="confirmpassword.errors?.['required']">
+          confirm password is required
+        </div>
+        <div *ngIf="confirmpassword.errors?.['minlength']">
+          password should be at least 6 characters
+        </div>
+        <div *ngIf="confirmpassword.errors?.['maxlength']">
+          confirm password must be at least 40 characters max
+        </div>
+      </div>
+    </div> -->
+    <!-- <div>
+      <tr>
+        <td> -->
+          <!-- <option *ngFor="let country of countries" [ngValue]="country" value="{{country.name}}">{{country.name}}</option> -->
+          <!-- <select
+            (change)="changeCountry($event)"
+            name="country"
+            formControlName="country"
+            placeholder="Choose Country"
+          >
+            <option *ngFor="let country of c">{{ country }}</option>
+          </select>
+        </td>
+        <td>
+          <select
+            (change)="changeState($event)"
+            name="state"
+            formControlName="state"
+            placeholder="Choose State"
+          >
+            <option>--Choose State--</option>
+            <option *ngFor="let state of states">{{ state.name }}</option>
+          </select>
+        </td>
+        <td>
+          <select name="city" formControlName="city" placeholder="Choose City">
+            <option>--Choose City--</option>
+            <option *ngFor="let city of cities1">{{ city }}</option>
+          </select>
+        </td>
+        <td></td>
+      </tr>
+    </div>
+
+    <div class="form-control">
+      <input
+        type="checkbox"
+        name="acceptTerms"
+        [(ngModel)]="form.acceptTerms"
+        acceptTerms
+        #acceptTerms="ngModel"
+        
+      />
+      <label style="margin-left: 20px"
+        >I have read and agree to the terms and conditions</label
+      >
+    </div>
+
+    <div class="form-control">
+      <button type="submit" class="btn btn-primary" style="margin-left: 20px">
+        Register
+      </button>
+      <button type="button" class="btn btn-warning" style="margin-left: 20px">
+        Reset
+      </button>
+    </div>
+  </form>
+</div> --> 
